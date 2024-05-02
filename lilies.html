@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Add to Basket</title>
+<link rel="stylesheet" href="productPage.css">
+<script src="addToBasket.js"></script>
+
+</head>
+<body>
+<div class="container">
+  <div class="header">
+    <img src="logo.png" alt="Floral Project" />
+    <nav>
+      <a href="orders.html">Track Order</a>
+      <a href="#">Help</a>
+      <a href="#">
+        <i class="fas fa-shopping-basket"></i>
+        <span id="basket-count">0</span>
+      </a>
+     <a href="login.html"><i class="fas fa-user"></i></a>
+
+    </nav>
+  </div>
+
+  <img src="images/lilies.jpeg" alt="Lilies" class="product-image">
+
+  <div class="product-details">
+    <h2>Lilies</h2>
+    <!-- Delivery Date Section -->
+    <div class="form-section">
+      <label for="delivery-date">DELIVERY DATE*</label>
+      <input type="date" id="delivery-date" name="delivery-date">
+    </div>
+
+    <!-- Purchasing Options Section -->
+    <div class="form-section">
+        <h3>PURCHASING OPTIONS</h3>
+        <label>
+          <input type="radio" name="purchase-option" value="subscription">
+          Start a Subscription: <span>$80</span> + free shipping
+          <!-- Subscription info remains the same -->
+        </label>
+        <label>
+          <input type="radio" name="purchase-option" value="one-time" checked>
+          One time purchase: <span>$90</span>
+        </label>
+      </div>
+
+    <!-- Add to Basket Button -->
+    <button class="add-to-basket">ADD TO BASKET</button>
+  </div>
+</div>
+<script src="https://kit.fontawesome.com/763252e2ee.js" crossorigin="anonymous"></script>
+</body>
+</html>

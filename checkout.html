@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Checkout</title>
+<script src="https://kit.fontawesome.com/763252e2ee.js" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="checkout.css">
+</head>
+<body>
+<div class="container">
+    <div class="header">
+        <h2>Checkout</h2>
+        <div id="user-icon">
+            <a href="login.html"><i class="fas fa-user"></i></a>
+        </div>
+    </div>
+    <form id="checkout-form">
+        <input type="text" id="firstName" name="firstName" placeholder="First Name*" required>
+        <input type="text" id="lastName" name="lastName" placeholder="Last Name*" required>
+        <input type="text" id="address" name="address" placeholder="Address*" required>
+        <input type="text" id="city" name="city" placeholder="City*" required>
+        <input type="text" id="state" name="state" placeholder="State*" required>
+        <input type="text" id="zip" name="zip" placeholder="Zip Code*" required>
+        <button type="submit">Place Order</button>
+    </form>    
+    <div id="total-amount"></div>
+    <div id="delivery-fee-message" style="color: blue;">A delivery fee of $25 has been added to your total.</div>
+    <div id="discount-message" style="display: none; color: green;"></div> <!-- Discount message element -->
+    <div id="warning-message" style="display: none; color: rgb(255, 2, 2);"></div> <!-- Warning message element -->
+
+</div>
+<script src="checkout.js"></script>
+</body>
+</html>

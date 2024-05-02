@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Flower Shop</title>
+<link rel="stylesheet" href="styles.css">
+<script src="https://kit.fontawesome.com/763252e2ee.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div class="container">
+  <header class="header">
+    <div class="logo">Floral Project</div>
+    <div class="nav">
+        <a href="orders.html">Track Order</a>
+
+      <div class="help">Help</div>
+      <div class="basket">
+        <i class="fa fa-shopping-basket" aria-hidden="true"></i>
+        <span id="basketCount">0</span>
+      </div>
+      <div id="user-icon">
+        <a href="login.html"><i class="fas fa-user"></i></a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="promo-banner">
+      Send Her Blooms - She will love it! Shop All Mother's Day Flowers and Gifts!
+    </section>
+    
+    <section class="filters">
+      <div class="filter">FILTER BY</div>
+      <select id="flowerType" class="filter-dropdown">
+        <option value="mixed">Mixed</option>
+        <option value="roses">Roses</option>
+        <option value="lilies">Lilies</option>
+        <option value="tulips">Tulips</option>
+        <option value="daisies">Daisies</option>
+      </select>
+      <select id="occasion" class="filter-dropdown">
+        <option value="all">All Occasions</option>
+        <option value="mothers-day">Mother's Day</option>
+        <option value="birthday">Birthday</option>
+        <option value="thank-you">Thank You</option>
+      </select>
+      <select id="color" class="filter-dropdown">
+        <option value="mixed">Mixed</option>
+        <option value="red">Red</option>
+        <option value="yellow">Yellow</option>
+        <option value="green">Green</option>
+        <option value="orange">Orange</option>
+      </select>
+      <div class="sort">
+        SORT
+        <select id="sortPrice" class="sort-dropdown">
+          <option value="lowToHigh">Price: Low to High</option>
+          <option value="highToLow">Price: High to Low</option>
+        </select>
+      </div>
+    </section>
+
+    <section class="product-grid">
+        <a href="mixed.html" class="product" data-id="mixed" data-price="100" data-occasion="mothers-day" data-color="mixed">
+          <img src="images/mixed.jpeg" alt="Mixed Flowers">
+          <h3>Mixed</h3>
+          <p>From $100</p>
+        </a>
+        <a href="roses.html" class="product" data-id="roses" data-price="90" data-occasion="birthday" data-color="red">
+          <img src="images/roses.jpeg" alt="Roses">
+          <h3>Roses</h3>
+          <p>From $90</p>
+        </a>
+        <a href="lilies.html" class="product" data-id="lilies" data-price="80" data-occasion="thank-you" data-color="orange">
+          <img src="images/lilies.jpeg" alt="Lilies">
+          <h3>Lilies</h3>
+          <p>From $80</p>
+        </a>
+        <a href="tulips.html" class="product" data-id="tulips" data-price="70" data-occasion="thank-you" data-color="yellow">
+          <img src="images/tulips.jpeg" alt="Tulips">
+          <h3>Tulips</h3>
+          <p>From $70</p>
+        </a>
+        <a href="daisies.html" class="product" data-id="daisies" data-price="60" data-occasion="thank-you" data-color="green">
+          <img src="images/daisies.jpeg" alt="Daisies">
+          <h3>Daisies</h3>
+          <p>From $60</p>
+        </a>
+      </section>
+      
+  </main>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

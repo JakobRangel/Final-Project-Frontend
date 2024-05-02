@@ -1,0 +1,104 @@
+/* Base setup */
+body, html {
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.login-wrap {
+  background-color: #ffffff;
+  padding: 40px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
+}
+
+.login-html {
+  position: relative;
+}
+
+/* Tabs setup */
+.tab {
+  font-size: 16px;
+  margin-right: 15px;
+  cursor: pointer;
+  padding: 10px 20px;
+  display: inline-block;
+  background: transparent;
+  border: none;
+  border-bottom: 2px solid transparent;
+  transition: all 0.3s ease;
+}
+
+/* Dynamic styling for active tabs */
+#tab-1:checked + label[for="tab-1"],
+#tab-2:checked + label[for="tab-2"] {
+  border-color: #000;
+  border-bottom: 2px solid #333;
+}
+
+/* Form styling */
+.input {
+  font-size: 16px;
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  background-color: #f8f8f8;
+  border: 2px solid #ddd;
+  border-radius: 20px;
+  box-sizing: border-box;
+  transition: border-color 0.3s;
+}
+
+.input:focus {
+  border-color: #805ad5;
+  outline: none;
+}
+
+.label {
+  margin-bottom: 5px;
+  font-size: 14px;
+  color: #333;
+}
+
+.button {
+  width: 100%;
+  padding: 10px;
+  border-radius: 20px;
+  border: none;
+  background-color: #4CAF50;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.button:hover {
+  background-color: #45a049;
+}
+
+/* Visibility control for forms based on tab selection */
+.sign-in-htm,
+.sign-up-htm {
+  display: none; /* Default: hide both */
+}
+
+#tab-1:checked ~ .login-form .sign-in-htm {
+  display: block; /* Show Sign In form when its tab is selected */
+}
+
+#tab-2:checked ~ .login-form .sign-up-htm {
+  display: block; /* Show Sign Up form when its tab is selected */
+}
+
+/* Footer and miscellaneous styles */
+.foot-lnk, .hr {
+  text-align: center;
+  margin-top: 20px;
+}

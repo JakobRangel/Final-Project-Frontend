@@ -1,0 +1,81 @@
+body, html {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.header h2 {
+    color: #333;
+}
+
+#user-icon {
+    display: none; /* Initially hidden, can be shown based on login status */
+}
+
+#user-icon a i {
+    font-size: 24px;
+    color: #333;
+}
+
+input[type="text"], select, button {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 25px;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+#total-amount, #delivery-fee-message, #discount-message, #warning-message {
+    font-size: 16px;
+    color: #333;
+    margin: 10px 0;
+    padding: 10px;
+    background: #e7f4e4;
+    border-radius: 15px;
+    display: block;
+}
+
+#total-amount {
+    font-weight: bold;
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding: 10px;
+    }
+
+    input[type="text"], select, button {
+        padding: 10px 15px;
+    }
+}

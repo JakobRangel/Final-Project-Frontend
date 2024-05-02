@@ -1,0 +1,66 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f4f4f4;
+  }
+  .container {
+    max-width: 800px;
+    margin: 20px auto;
+    background: white;
+    padding: 20px;
+  }
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  .product-image {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+  .product-details {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  .product-details h2 {
+    font-size: 2em;
+  }
+  .form-section {
+    margin-bottom: 20px;
+  }
+  .form-section h3 {
+    font-size: 1.5em;
+    color: #333;
+  }
+  .form-section label {
+    display: block;
+    margin: 10px 0 5px;
+  }
+  .form-section input,
+  .form-section select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+  .form-section input[type="radio"] {
+    width: auto;
+  }
+  .form-section .subscription-info {
+    font-size: 0.8em;
+    color: #666;
+    margin-left: 25px;
+  }
+  .add-to-basket {
+    background: #4CAF50;
+    color: white;
+    padding: 15px 30px;
+    font-size: 1em;
+    display: block;
+    text-align: center;
+    cursor: pointer;
+    border: none;
+    width: 100%;
+  }
